@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import Header from "./components/Header";
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header></Header>
-      </div>
-    )
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <Navbar></Navbar>
+    </div>
+  );
+};
 
 export default App;

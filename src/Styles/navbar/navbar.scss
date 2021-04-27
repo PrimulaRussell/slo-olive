@@ -1,0 +1,32 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  @include flexCenter();
+  background-color: var(--olive);
+  padding: 15px;
+  height: 140px;
+  border: 1px solid #000;
+  .logo {
+    @include flexCenter();
+  }
+}
+
+.navlinks {
+  @include flexCenter();
+  a {
+    text-decoration: none;
+  }
+  .product {
+    margin: 40px;
+  }
+  .contact {
+    color: #000;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,56 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--olive);
+  padding: 15px;
+  height: 140px;
+  border: 1px solid #000;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navlinks a {
+  text-decoration: none;
+}
+
+.navlinks .product {
+  margin: 40px;
+}
+
+.navlinks .contact {
+  color: #000;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+/*# sourceMappingURL=navbar.css.map */
