@@ -1,0 +1,15 @@
+.products {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)),
+    url(/src/Images/product-background.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  padding: 5%;
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 5%;
+  }
+}

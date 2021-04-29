@@ -1,0 +1,18 @@
+.products {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.47)), to(rgba(0, 0, 0, 0.47))), url(/src/Images/product-background.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url(/src/Images/product-background.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  padding: 5%;
+}
+
+.products .product-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 5%;
+}
+/*# sourceMappingURL=products.css.map */

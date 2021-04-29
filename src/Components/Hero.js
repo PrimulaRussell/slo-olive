@@ -14,12 +14,6 @@ const Hero = () => {
             nulla explicabo cupiditate impedit itaque deserunt, et hic saepe
             error tempora facilis magni, animi repudiandae harum cumque
             laudantium dolorem ad commodi quasi nam consequuntur vero.
-            Repudiandae rem possimus at perferendis enim, porro totam molestias
-            tempore magnam odio, reprehenderit non veniam aliquam repellat.
-            Similique sit esse deserunt aliquam voluptatum. Eos laudantium
-            excepturi voluptatibus praesentium officia culpa maiores beatae
-            commodi earum! Veniam soluta in voluptas hic quo, commodi dolore sed
-            tempore consectetur obcaecati modi explicabo nihil ea incidunt.
           </p>
           <a href="https://placeholder.com">
             <img
