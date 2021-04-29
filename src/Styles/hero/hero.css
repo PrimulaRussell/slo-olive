@@ -1,0 +1,13 @@
+.hero {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.61)), to(rgba(0, 0, 0, 0.61))), url("/src/Images/hero-background.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("/src/Images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero .h1 {
+  padding: 5%;
+  text-align: initial;
+}
+/*# sourceMappingURL=hero.css.map */
