@@ -3,7 +3,7 @@ import "../Styles/products/product.css";
 
 const Product = () => {
   return (
-    <div className="product">
+    <div className="product" id="products">
       <a href="https://placeholder.com">
         <img
           src="https://via.placeholder.com/100"

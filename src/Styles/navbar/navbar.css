@@ -43,11 +43,11 @@
   text-decoration: none;
 }
 
-.navlinks .product {
+.navlinks .productBtn {
   margin: 40px;
 }
 
-.navlinks .contact {
+.navlinks .contactBtn {
   color: #000;
   font-weight: bold;
   padding: 15px;

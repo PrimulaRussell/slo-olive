@@ -1,0 +1,48 @@
+.contact {
+  background-color: var(--dark-gray);
+  padding: 5%;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+.contact form label {
+  padding: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  text-align: left;
+  width: 400px;
+  max-width: 400px;
+  padding: 5px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contact form textarea {
+  min-width: 400px;
+  min-height: 150px;
+}
+
+.contact form button {
+  margin-top: 20px;
+  background-color: var(--olive);
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=contact.css.map */

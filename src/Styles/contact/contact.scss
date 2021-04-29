@@ -1,0 +1,38 @@
+.contact {
+  background-color: var(--dark-gray);
+  padding: 5%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+
+    label {
+      padding: 5px;
+    }
+
+    input,
+    textarea {
+      text-align: left;
+      width: 400px;
+      max-width: 400px;
+      padding: 5px;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    textarea {
+      min-width: 400px;
+      min-height: 150px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: var(--olive);
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}

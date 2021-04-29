@@ -38,10 +38,10 @@ const Navbar = () => {
           <p className="h3">About Us</p>
         </a>
         <a href="#products">
-          <p className="h3 product">Our Products</p>
+          <p className="h3 productBtn">Our Products</p>
         </a>
         <a href="#contact">
-          <p className="h3 contact">Contact Us</p>
+          <p className="h3 contactBtn">Contact Us</p>
         </a>
       </div>
     </div>
