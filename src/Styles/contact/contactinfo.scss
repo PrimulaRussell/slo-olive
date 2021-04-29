@@ -1,0 +1,31 @@
+.contact-info {
+  background-color: var(--light-gray);
+  padding: 5%;
+  border-radius: 10px;
+  .h1 {
+    text-align: left;
+    color: #000;
+  }
+
+  .h2 {
+    font-weight: bold;
+    color: #000;
+    width: 200px;
+  }
+
+  .flex-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .phone,
+    .email {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      svg {
+        margin: 0 5px;
+      }
+    }
+  }
+}

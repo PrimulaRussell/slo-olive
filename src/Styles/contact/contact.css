@@ -3,6 +3,10 @@
   padding: 5%;
 }
 
+.contact .h1 {
+  padding-bottom: 5%;
+}
+
 .contact form {
   display: -webkit-box;
   display: -ms-flexbox;

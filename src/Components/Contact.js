@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/contact/contact.css";
+import ContactInfo from "./ContactInfo";
 const Contact = () => {
   return (
     <div className="contact">
@@ -20,6 +21,7 @@ const Contact = () => {
             Submit
           </button>
         </form>
+        <ContactInfo></ContactInfo>
       </div>
     </div>
   );
