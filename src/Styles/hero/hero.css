@@ -6,8 +6,25 @@
   height: 100vh;
 }
 
-.hero .h1 {
-  padding: 5%;
+.hero .h1,
+.hero .h3 {
   text-align: initial;
+}
+
+.hero .h1 {
+  padding: 5% 0;
+}
+
+.hero .h3 {
+  width: 50%;
+}
+
+.hero .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=hero.css.map */

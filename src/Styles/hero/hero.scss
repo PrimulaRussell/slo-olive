@@ -4,9 +4,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-}
+  .h1,
+  .h3 {
+    text-align: initial;
+  }
 
-.hero .h1 {
-  padding: 5%;
-  text-align: initial;
+  .h1 {
+    padding: 5% 0;
+  }
+  .h3 {
+    width: 50%;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
 }
