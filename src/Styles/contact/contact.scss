@@ -1,41 +1,46 @@
 .contact {
   background-color: var(--dark-gray);
-  padding: 5%;
-
+  padding-top: 5%;
   .h1 {
-    padding-bottom: 5%;
+    padding-bottom: 3%;
   }
 
   form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
+    margin: 2%;
+
+    .name,
+    .email,
+    .message {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      left: -50px;
+    }
 
     label {
-      padding: 5px;
+      width: 100px;
     }
 
     input,
     textarea {
       text-align: left;
-      width: 400px;
-      max-width: 400px;
+      width: 300px;
       padding: 5px;
       margin-bottom: 15px;
       outline: none;
     }
 
     textarea {
-      min-width: 400px;
-      min-height: 150px;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 100px;
     }
 
     button {
       margin-top: 20px;
       background-color: var(--olive);
       padding: 5px;
+      width: fit-content;
       border-radius: 5px;
     }
   }

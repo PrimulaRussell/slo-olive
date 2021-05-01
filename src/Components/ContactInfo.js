@@ -4,14 +4,18 @@ const ContactInfo = () => {
   return (
     <div>
       <div className="contact-info">
-        <p className="h1">San Luis Obispo Olive</p>
         <div className="flex-info">
-          <p className="h2">958 Higuera St San Luis Obispo, CA 93401</p>
+          <div className="mini-text">
+            <p id="SLO">We Olive SLO</p>
+            <p>
+              958 Higuera St. <br /> San Luis Obispo, CA 93401
+            </p>
+          </div>
           <div>
             <div className="phone">
               <svg
-                width="32"
-                height="32"
+                width="20"
+                height="20"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,12 +25,12 @@ const ContactInfo = () => {
                   fill="black"
                 />
               </svg>
-              <p className="normal-text">+1 (805) 595-1376</p>
+              <p className="mini-text">+1 (805) 595-1376</p>
             </div>
             <div className="email">
               <svg
-                width="32"
-                height="32"
+                width="20"
+                height="20"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,31 +40,14 @@ const ContactInfo = () => {
                   fill="black"
                 />
               </svg>
-              <p className="normal-text">SLOOLIVE@yahoo.com</p>
+              <p className="mini-text">rrussell@weolive.com</p>
             </div>
           </div>
-          <svg
-            width="115"
-            height="105"
-            viewBox="0 0 115 105"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M92 35.6999C92 64.2683 57.5 100.8 57.5 100.8C57.5 100.8 23 64.9487 23 35.6999C23 18.3015 38.4445 4.19995 57.5 4.19995C76.5532 4.19995 92 18.3015 92 35.6999Z"
-              stroke="black"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M57.5 50.4C65.1215 50.4 71.3 44.7587 71.3 37.8C71.3 30.8412 65.1215 25.2 57.5 25.2C49.8785 25.2 43.7 30.8412 43.7 37.8C43.7 44.7587 49.8785 50.4 57.5 50.4Z"
-              stroke="black"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <p className="mini-text">
+            Store Hours: <br />
+            Daily 10:30 to 4:30
+            <br /> Saturday 10:00-5:00
+          </p>
         </div>
       </div>
     </div>

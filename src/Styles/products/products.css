@@ -3,8 +3,11 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url(/src/Images/product-background.jpg);
   background-repeat: repeat-y;
   background-size: cover;
-  height: 100vh;
-  padding: 5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 700px;
+  padding: 5% 0;
 }
 
 .products .product-grid {

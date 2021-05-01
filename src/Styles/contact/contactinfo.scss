@@ -1,23 +1,19 @@
 .contact-info {
-  background-color: var(--light-gray);
-  padding: 5%;
-  border-radius: 10px;
-  .h1 {
-    text-align: left;
-    color: #000;
-  }
+  margin: auto auto 2%;
 
-  .h2 {
+  .h3 {
+    text-align: left;
     font-weight: bold;
     color: #000;
-    width: 200px;
   }
 
   .flex-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    #SLO {
+      font-weight: bold;
+    }
     .phone,
     .email {
       display: flex;

@@ -3,8 +3,9 @@
     url(/src/Images/product-background.jpg);
   background-repeat: repeat-y;
   background-size: cover;
-  height: 100vh;
-  padding: 5%;
+  height: fit-content;
+  min-height: 700px;
+  padding: 5% 0;
 
   .product-grid {
     display: grid;

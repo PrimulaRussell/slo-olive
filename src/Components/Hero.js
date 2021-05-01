@@ -8,12 +8,27 @@ const Hero = () => {
         <p className="h1">San Luis Obispo Olive</p>
         <div className="info">
           <p className="h3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, eligendi? Temporibus minus error architecto, nemo
-            voluptates natus reiciendis placeat aut eius debitis! Quo dicta
-            nulla explicabo cupiditate impedit itaque deserunt, et hic saepe
-            error tempora facilis magni, animi repudiandae harum cumque
-            laudantium dolorem ad commodi quasi nam consequuntur vero.
+            Established July 1st 2006 and located in the heart of San Luis
+            Obispo, We Olive San Luis Obispo sells Certified California Extra
+            Virgin Olive Oil and Olive related products including unique and
+            thoughtful gifts. <br />
+            To be California Certified Extra Virgin Olive Oil, purveyors must
+            submit samples for a lab analysis checking for oleic acid and
+            polyphenol counts. The other sample is sent to UC Davis for a blind
+            tasting with panel members on the California Olive Oil Counsel.{" "}
+            <br />
+            The counsel is tasting to see if their are positive or negative
+            defects in the oil. Only oils with positive attributes, oleic acid &
+            polyphenol counts within parameters are California Certified Extra
+            Virgin. <br />
+            We Olive SLO is one of the oldest olive oil tasting rooms. We pride
+            ourselves on having the finest California Certified Olive Oils and
+            olive oil related products (tapenade, mustards, salts, dipping oils,
+            mind blowing balsamics & locally produced vinegars) at a fair price.{" "}
+            <br />
+            We always offer refill pricing on bulk products when bringing your
+            previously purchased bottle (clean & dry) back to the store, we
+            reward our customers for recycling.
           </p>
           <a href="https://placeholder.com">
             <img

@@ -3,7 +3,9 @@
     url("/src/Images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: fit-content;
+  min-height: 700px;
+  padding: 5% 0;
   .h1,
   .h3 {
     text-align: initial;

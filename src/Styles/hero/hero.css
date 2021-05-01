@@ -3,7 +3,11 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("/src/Images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 700px;
+  padding: 5% 0;
 }
 
 .hero .h1,

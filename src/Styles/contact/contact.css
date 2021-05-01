@@ -1,52 +1,55 @@
 .contact {
   background-color: var(--dark-gray);
-  padding: 5%;
+  padding-top: 5%;
 }
 
 .contact .h1 {
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .contact form {
+  margin: 2%;
+}
+
+.contact form .name,
+.contact form .email,
+.contact form .message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5%;
+  position: relative;
+  left: -50px;
 }
 
 .contact form label {
-  padding: 5px;
+  width: 100px;
 }
 
 .contact form input,
 .contact form textarea {
   text-align: left;
-  width: 400px;
-  max-width: 400px;
+  width: 300px;
   padding: 5px;
   margin-bottom: 15px;
   outline: none;
 }
 
 .contact form textarea {
-  min-width: 400px;
-  min-height: 150px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100px;
 }
 
 .contact form button {
   margin-top: 20px;
   background-color: var(--olive);
   padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 5px;
 }
 /*# sourceMappingURL=contact.css.map */
