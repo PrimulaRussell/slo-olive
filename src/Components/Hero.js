@@ -33,6 +33,7 @@ const Hero = () => {
           <a href="https://placeholder.com">
             <img
               src="https://via.placeholder.com/400"
+              alt="Background"
               className="hero-pic"
             ></img>
           </a>
