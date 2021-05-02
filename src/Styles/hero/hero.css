@@ -36,4 +36,30 @@
   text-align: left;
   padding: 5px 0;
 }
+
+/* Responsive */
+@media only screen and (max-width: 1110px) {
+  .hero .h1,
+  .hero .h3 {
+    margin: auto;
+    text-align: center;
+  }
+  .hero .h1 {
+    padding: 0;
+  }
+  .hero .h3 {
+    width: 100%;
+    padding: 3%;
+  }
+  .hero .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .info p {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
 /*# sourceMappingURL=hero.css.map */
