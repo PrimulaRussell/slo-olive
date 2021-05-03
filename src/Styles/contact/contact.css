@@ -89,4 +89,20 @@
     min-height: 200px;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .contact form label {
+    width: 150px;
+    font-size: 18px;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 200px;
+  }
+  .contact form textarea {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 150px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

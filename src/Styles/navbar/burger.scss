@@ -128,64 +128,8 @@
       }
     }
   }
-}
-
-/* Menu hide*/
-.menulist.hide {
-  width: 100%;
-  display: initial;
-  /*Link Animations Hide*/
-  a.aboutlink {
-    @include dropdown();
-    top: 100px;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    animation: fade 1s;
-    @keyframes fade {
-      0% {
-        opacity: 100%;
-        visibility: visible;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  }
-
-  a.productlink {
-    @include dropdown();
-    top: 224px;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    animation: fade2 2s;
-    @keyframes fade2 {
-      0% {
-        opacity: 100%;
-        visibility: visible;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  }
-
-  a.contactlink {
-    @include dropdown();
-    top: 348px;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    animation: fade3 3s;
-    @keyframes fade3 {
-      0% {
-        opacity: 100%;
-        visibility: visible;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
+  /* Menu hide*/
+  .menulist.hide {
+    display: none;
   }
 }

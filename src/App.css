@@ -47,6 +47,32 @@
   font-size: 15px;
 }
 
+/*Media Queries*/
+
+@media only screen and (max-width: 900px) {
+  .h1 {
+    font-size: 50px;
+  }
+  .h2 {
+    font-size: 20px;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+
+  .normal-text {
+    font-size: 14px;
+  }
+
+  .normal-text-bold {
+    font-size: 14px;
+  }
+
+  .mini-text {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width: 803px) {
   .container {
     margin: 0 90px;
@@ -56,5 +82,28 @@
 @media only screen and (max-width: 711px) {
   .container {
     margin: 0 40px;
+  }
+}
+@media only screen and (max-width: 423px) {
+  .h1 {
+    font-size: 40px;
+  }
+  .h2 {
+    font-size: 16px;
+  }
+  .h3 {
+    font-size: 14px;
+  }
+
+  .normal-text {
+    font-size: 12px;
+  }
+
+  .normal-text-bold {
+    font-size: 12px;
+  }
+
+  .mini-text {
+    font-size: 10px;
   }
 }

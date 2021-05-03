@@ -25,3 +25,28 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    margin: auto auto 1%;
+
+    .h3 {
+      text-align: left;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .flex-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #SLO {
+        font-weight: bold;
+      }
+      .phone,
+      .email {
+        padding: 0px;
+      }
+    }
+  }
+}
