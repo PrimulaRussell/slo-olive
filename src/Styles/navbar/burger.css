@@ -1,8 +1,12 @@
+/*Mixins*/
+/*hide menu when desktop mode*/
 .menulist {
   display: none;
 }
 
+/*Media Queries*/
 @media only screen and (max-width: 1110px) {
+  /*Hamburger Menu*/
   .menubtn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,7 +20,6 @@
     position: relative;
     width: 80px;
     height: 80px;
-    z-index: 1;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -47,6 +50,7 @@
     -webkit-transform: translateY(16px);
             transform: translateY(16px);
   }
+  /*Hamburger Menu Open/Close Animation*/
   .menubtn.show .menubtn-burger {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
@@ -62,28 +66,14 @@
     -webkit-transform: rotate(-45deg) translate(35px, 35px);
             transform: rotate(-45deg) translate(35px, 35px);
   }
+  /*NavMenu*/
+  /*Menu show*/
   .menulist.show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 100px;
-    left: 0;
     width: 100%;
-    height: 400px;
-    background-color: var(--light-gray);
+    display: initial;
+    /*Link Animations Show*/
   }
-  .menulist.show a {
+  .menulist.show a.aboutlink {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -93,14 +83,260 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: absolute;
     text-decoration: none;
     width: 100%;
-    height: 100%;
+    height: 125px;
     color: #fff;
     font-size: 24px;
+    background-color: var(--light-gray);
+    top: 100px;
+    right: 0;
+    -webkit-animation: slidein1 1s;
+            animation: slidein1 1s;
   }
-  .menulist.show a:hover {
+  .menulist.show a.aboutlink:hover {
     background-color: var(--dark-gray);
+  }
+  @-webkit-keyframes slidein1 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes slidein1 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .menulist.show a.productlink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    height: 125px;
+    color: #fff;
+    font-size: 24px;
+    background-color: var(--light-gray);
+    top: 224px;
+    right: 0;
+    -webkit-animation: slidein2 2s;
+            animation: slidein2 2s;
+  }
+  .menulist.show a.productlink:hover {
+    background-color: var(--dark-gray);
+  }
+  @-webkit-keyframes slidein2 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes slidein2 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .menulist.show a.contactlink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    height: 125px;
+    color: #fff;
+    font-size: 24px;
+    background-color: var(--light-gray);
+    top: 348px;
+    right: 0;
+    -webkit-animation: slidein3 3s;
+            animation: slidein3 3s;
+  }
+  .menulist.show a.contactlink:hover {
+    background-color: var(--dark-gray);
+  }
+  @-webkit-keyframes slidein3 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  @keyframes slidein3 {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+}
+
+/* Menu hide*/
+.menulist.hide {
+  width: 100%;
+  display: initial;
+  /*Link Animations Hide*/
+}
+
+.menulist.hide a.aboutlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 125px;
+  color: #fff;
+  font-size: 24px;
+  background-color: var(--light-gray);
+  top: 100px;
+  left: 100%;
+  -webkit-animation: slideout 1s;
+          animation: slideout 1s;
+}
+
+.menulist.hide a.aboutlink:hover {
+  background-color: var(--dark-gray);
+}
+
+@-webkit-keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideout {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.menulist.hide a.productlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 125px;
+  color: #fff;
+  font-size: 24px;
+  background-color: var(--light-gray);
+  top: 224px;
+  left: 100%;
+  -webkit-animation: slideout2 1.5s;
+          animation: slideout2 1.5s;
+}
+
+.menulist.hide a.productlink:hover {
+  background-color: var(--dark-gray);
+}
+
+@-webkit-keyframes slideout2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideout2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.menulist.hide a.contactlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 125px;
+  color: #fff;
+  font-size: 24px;
+  background-color: var(--light-gray);
+  top: 348px;
+  left: 100%;
+  -webkit-animation: slideout3 2s;
+          animation: slideout3 2s;
+}
+
+.menulist.hide a.contactlink:hover {
+  background-color: var(--dark-gray);
+}
+
+@-webkit-keyframes slideout3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideout3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
   }
 }
 /*# sourceMappingURL=burger.css.map */

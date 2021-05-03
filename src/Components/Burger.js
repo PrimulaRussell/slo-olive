@@ -21,9 +21,15 @@ const Burger = () => {
         <div className="menubtn-burger"></div>
       </div>
       <div className={`menulist ${menuVis}`}>
-        <a href="#about">About Us</a>
-        <a href="#products">Our Products</a>
-        <a href="#contact">Contact Us</a>
+        <a href="#about" className="aboutlink">
+          About Us
+        </a>
+        <a href="#products" className="productlink">
+          Our Products
+        </a>
+        <a href="#contact" className="contactlink">
+          Contact Us
+        </a>
       </div>
     </div>
   );

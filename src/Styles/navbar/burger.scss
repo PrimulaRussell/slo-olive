@@ -1,19 +1,37 @@
+/*Mixins*/
 @mixin flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@mixin dropdown {
+  @include flex();
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 125px;
+  color: #fff;
+  font-size: 24px;
+  background-color: var(--light-gray);
+  &:hover {
+    background-color: var(--dark-gray);
+  }
+}
+
+/*hide menu when desktop mode*/
 .menulist {
   display: none;
 }
 
+/*Media Queries*/
 @media only screen and (max-width: 1110px) {
+  /*Hamburger Menu*/
   .menubtn {
     @include flex();
     position: relative;
     width: 80px;
     height: 80px;
-    z-index: 1;
     transition: all 0.5s ease-in-out;
 
     .menubtn-burger {
@@ -43,6 +61,8 @@
       }
     }
   }
+
+  /*Hamburger Menu Open/Close Animation*/
   .menubtn.show .menubtn-burger {
     transform: translateX(-50px);
     background: transparent;
@@ -54,27 +74,109 @@
       transform: rotate(-45deg) translate(35px, 35px);
     }
   }
-  .menulist.show {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-color: var(--light-gray);
 
-    a {
-      @include flex();
-      text-decoration: none;
-      width: 100%;
-      height: 100%;
-      color: #fff;
-      font-size: 24px;
-      &:hover {
-        background-color: var(--dark-gray);
+  /*NavMenu*/
+
+  /*Menu show*/
+  .menulist.show {
+    width: 100%;
+    display: initial;
+
+    /*Link Animations Show*/
+    a.aboutlink {
+      @include dropdown();
+      top: 100px;
+      right: 0;
+      animation: slidein1 1s;
+      @keyframes slidein1 {
+        0% {
+          right: -100%;
+        }
+        100% {
+          right: 0;
+        }
+      }
+    }
+
+    a.productlink {
+      @include dropdown();
+      top: 224px;
+      right: 0;
+      animation: slidein2 2s;
+      @keyframes slidein2 {
+        0% {
+          right: -100%;
+        }
+        100% {
+          right: 0;
+        }
+      }
+    }
+
+    a.contactlink {
+      @include dropdown();
+      top: 348px;
+      right: 0;
+      animation: slidein3 3s;
+      @keyframes slidein3 {
+        0% {
+          right: -100%;
+        }
+        100% {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Menu hide*/
+.menulist.hide {
+  width: 100%;
+  display: initial;
+
+  /*Link Animations Hide*/
+  a.aboutlink {
+    @include dropdown();
+    top: 100px;
+    left: 100%;
+    animation: slideout 1s;
+    @keyframes slideout {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  }
+
+  a.productlink {
+    @include dropdown();
+    top: 224px;
+    left: 100%;
+    animation: slideout2 1.5s;
+    @keyframes slideout2 {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  }
+
+  a.contactlink {
+    @include dropdown();
+    top: 348px;
+    left: 100%;
+    animation: slideout3 2s;
+    @keyframes slideout3 {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 100%;
       }
     }
   }
