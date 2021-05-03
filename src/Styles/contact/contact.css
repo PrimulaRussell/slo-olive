@@ -25,6 +25,8 @@
 }
 
 .contact form label {
+  padding-right: 10px;
+  text-align: right;
   width: 100px;
 }
 
@@ -51,5 +53,24 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .contact form label {
+    width: 150px;
+    font-size: 24px;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 400px;
+  }
+  .contact form textarea {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 200px;
+  }
+  .contact form button {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

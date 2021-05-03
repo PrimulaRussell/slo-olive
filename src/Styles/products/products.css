@@ -17,8 +17,15 @@
       grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media only screen and (max-width: 1110px) {
+  .products .product-grid {
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=products.css.map */
