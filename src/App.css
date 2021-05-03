@@ -46,3 +46,15 @@
 .mini-text {
   font-size: 15px;
 }
+
+@media only screen and (max-width: 803px) {
+  .container {
+    margin: 0 90px;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .container {
+    margin: 0 40px;
+  }
+}

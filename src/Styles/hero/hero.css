@@ -62,4 +62,10 @@
     padding: 10px 0;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .hero .h1 {
+    font-size: 50px;
+  }
+}
 /*# sourceMappingURL=hero.css.map */
