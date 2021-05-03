@@ -1,20 +1,8 @@
 import React from "react";
 import "../Styles/navbar/navbar.css";
-import { useState } from "react";
+import Burger from "./Burger";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const openMenu = () => {
-    if (!menuOpen) {
-      setMenuOpen(true);
-    } else {
-      setMenuOpen(false);
-    }
-  };
-
-  const menuVis = menuOpen ? "show" : " ";
-
   return (
     <div className="navbar">
       <div className="logo">
@@ -46,9 +34,8 @@ const Navbar = () => {
           </defs>
         </svg>
       </div>
-      <div className={`menubtn ${menuVis}`} onClick={openMenu}>
-        <div className="menubtn-burger"></div>
-      </div>
+      {/*Burger Menu*/}
+      <Burger></Burger>
       <div className="navlinks">
         <a href="#about">
           <p className="h3">About Us</p>
