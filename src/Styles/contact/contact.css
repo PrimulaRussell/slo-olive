@@ -104,5 +104,8 @@
     max-width: 200px;
     min-height: 150px;
   }
+  .contact .container {
+    margin: 0 10px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
