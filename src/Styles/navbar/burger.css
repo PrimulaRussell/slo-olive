@@ -223,30 +223,34 @@
   font-size: 24px;
   background-color: var(--light-gray);
   top: 100px;
-  left: 100%;
-  -webkit-animation: slideout 1s;
-          animation: slideout 1s;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
 }
 
 .menulist.hide a.aboutlink:hover {
   background-color: var(--dark-gray);
 }
 
-@-webkit-keyframes slideout {
+@-webkit-keyframes fade {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 
-@keyframes slideout {
+@keyframes fade {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 
@@ -268,30 +272,34 @@
   font-size: 24px;
   background-color: var(--light-gray);
   top: 224px;
-  left: 100%;
-  -webkit-animation: slideout2 1.5s;
-          animation: slideout2 1.5s;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fade2 2s;
+          animation: fade2 2s;
 }
 
 .menulist.hide a.productlink:hover {
   background-color: var(--dark-gray);
 }
 
-@-webkit-keyframes slideout2 {
+@-webkit-keyframes fade2 {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 
-@keyframes slideout2 {
+@keyframes fade2 {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 
@@ -313,30 +321,34 @@
   font-size: 24px;
   background-color: var(--light-gray);
   top: 348px;
-  left: 100%;
-  -webkit-animation: slideout3 2s;
-          animation: slideout3 2s;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fade3 3s;
+          animation: fade3 3s;
 }
 
 .menulist.hide a.contactlink:hover {
   background-color: var(--dark-gray);
 }
 
-@-webkit-keyframes slideout3 {
+@-webkit-keyframes fade3 {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 
-@keyframes slideout3 {
+@keyframes fade3 {
   0% {
-    left: 0;
+    opacity: 100%;
+    visibility: visible;
   }
   100% {
-    left: 100%;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=burger.css.map */

@@ -134,19 +134,21 @@
 .menulist.hide {
   width: 100%;
   display: initial;
-
   /*Link Animations Hide*/
   a.aboutlink {
     @include dropdown();
     top: 100px;
-    left: 100%;
-    animation: slideout 1s;
-    @keyframes slideout {
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fade 1s;
+    @keyframes fade {
       0% {
-        left: 0;
+        opacity: 100%;
+        visibility: visible;
       }
       100% {
-        left: 100%;
+        opacity: 0;
       }
     }
   }
@@ -154,14 +156,17 @@
   a.productlink {
     @include dropdown();
     top: 224px;
-    left: 100%;
-    animation: slideout2 1.5s;
-    @keyframes slideout2 {
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fade2 2s;
+    @keyframes fade2 {
       0% {
-        left: 0;
+        opacity: 100%;
+        visibility: visible;
       }
       100% {
-        left: 100%;
+        opacity: 0;
       }
     }
   }
@@ -169,14 +174,17 @@
   a.contactlink {
     @include dropdown();
     top: 348px;
-    left: 100%;
-    animation: slideout3 2s;
-    @keyframes slideout3 {
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fade3 3s;
+    @keyframes fade3 {
       0% {
-        left: 0;
+        opacity: 100%;
+        visibility: visible;
       }
       100% {
-        left: 100%;
+        opacity: 0;
       }
     }
   }
