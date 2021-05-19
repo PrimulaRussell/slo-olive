@@ -7,7 +7,7 @@
   height: -moz-fit-content;
   height: fit-content;
   min-height: 700px;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .hero .h1,
@@ -16,7 +16,7 @@
 }
 
 .hero .h1 {
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .hero .h3 {

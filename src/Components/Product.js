@@ -7,7 +7,9 @@ const Product = (props) => {
       <img src={props.img} className="product-pic" alt={props.desc}></img>
       <p className="normal-text-bold">{props.name}</p>
       <p className="normal-text">{props.productdesc}</p>
-      <p className="normal-text-bold"> We carry the following {props.desc}: </p>
+      <p className="normal-text-bold">
+        {props.isList} {props.desc}
+      </p>
       <p className="normal-text"> {props.productlist}</p>
     </div>
   );
