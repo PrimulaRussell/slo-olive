@@ -1,8 +1,15 @@
 .product {
   background-color: rgba(255, 255, 255, 0.83);
   padding: 5%;
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
+}
+
+.product .product-pic {
+  width: 80%;
+  height: auto;
 }
 
 .product .normal-text {

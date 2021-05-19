@@ -1,18 +1,14 @@
 import React from "react";
 import "../Styles/products/product.css";
 
-const Product = () => {
+const Product = (props) => {
   return (
     <div className="product" id="products">
-      <a href="https://placeholder.com">
-        <img
-          src="https://via.placeholder.com/100"
-          className="hero-pic"
-          alt="placeholder"
-        ></img>
-      </a>
-      <p className="normal-text-bold">Product Name</p>
-      <p className="normal-text">Short Description</p>
+      <img src={props.img} className="product-pic" alt={props.desc}></img>
+      <p className="normal-text-bold">{props.name}</p>
+      <p className="normal-text">{props.productdesc}</p>
+      <p className="normal-text-bold"> We carry the following {props.desc}: </p>
+      <p className="normal-text"> {props.productlist}</p>
     </div>
   );
 };
