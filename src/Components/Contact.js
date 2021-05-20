@@ -3,8 +3,13 @@ import emailjs from "emailjs-com";
 import "../Styles/contact/contact.css";
 import ContactInfo from "./ContactInfo";
 import Footer from "./Footer";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -18,6 +23,9 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log(error.text);
@@ -41,19 +49,33 @@ const Contact = () => {
           {/*Name Field*/}
           <div className="name">
             <label className="h3">Name</label>
-            <input type="text" name="user_name" />
+            <input
+              type="text"
+              name="user_name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
 
           {/*Email Field*/}
           <div className="email">
             <label className="h3">Email</label>
-            <input type="email" name="user_email" />
+            <input
+              type="email"
+              name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
 
           {/*Message Field*/}
           <div className="message">
             <label className="h3">Message</label>
-            <textarea name="message" />
+            <textarea
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
           </div>
 
           {/*Submit Button*/}

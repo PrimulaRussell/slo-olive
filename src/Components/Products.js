@@ -8,7 +8,7 @@ import Img3 from "../Images/bulk-oil.jpg";
 import Product from "./Product";
 const Products = () => {
   return (
-    <div className="products">
+    <div className="products" id="products">
       <div className="container">
         <p className="h1">Products</p>
         <div className="product-grid">
